@@ -41,6 +41,8 @@ namespace UnityStandardAssets._2D
             {
                 if (colliders[i].gameObject != gameObject)
                     m_Grounded = true;
+				if (colliders[i].gameObject.CompareTag("Background"))
+					m_Grounded = false;
             }
             m_Anim.SetBool("Ground", m_Grounded);
 
