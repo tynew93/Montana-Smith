@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: f66d90cfad43d4c418e25a6a4bbefd18
+timeCreated: 1524202981
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: montana run_0
+    21300002: montana run_1
+    21300004: montana run_2
+    21300006: montana run_3
+    21300008: montana run_4
+    21300010: montana run_5
+    21300012: montana run_6
+    21300014: montana run_7
+    21300016: montana run_8
+    21300018: montana run_9
+    21300020: montana run_10
+    21300022: montana run_11
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 49
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: montana run_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 104
+        width: 50
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5530365, y: 0.8426964}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: montana run_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 105
+        width: 50
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5212146, y: 0.85901535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: montana run_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 105
+        width: 48
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5331478, y: 0.8426964}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: montana run_3
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 105
+        width: 50
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5106073, y: 0.81005883}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: montana run_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 105
+        width: 50
+        height: 65
+      alignment: 9
+      pivot: {x: 0.4893927, y: 0.81821805}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: montana run_5
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 105
+        width: 50
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.85901535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: montana run_6
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 40
+        width: 49
+        height: 67
+      alignment: 9
+      pivot: {x: 0.54329497, y: 0.76913977}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: montana run_7
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 41
+        width: 46
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5576482, y: 0.8651681}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: montana run_8
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 41
+        width: 48
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5441971, y: 0.850724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: montana run_9
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 41
+        width: 45
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5825009, y: 0.85927826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: montana run_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 39
+        width: 41
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5517429, y: 0.8451571}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: montana run_11
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 42
+        width: 50
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5530365, y: 0.82705724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
