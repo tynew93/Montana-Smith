@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class LevelReturn : MonoBehaviour {
 
-	public GameObject[] vcams;
-	private int currentLevel;
+	public GameObject vcam1;
+	public GameObject vcam2;
 
-	void OnTriggerEnter2D(Collider2D other)
+
+
+	void OnTriggerExit2D(Collider2D other)
 	{
-		if (other.CompareTag ("Player") && vcams [currentLevel].activeSelf) {
-			vcams [currentLevel].SetActive (false);
-			--currentLevel;
-			vcams [currentLevel].SetActive (true);
-			gameObject.SetActive (false);
+		if (other.CompareTag ("Player") && !vcam1.activeSelf) {
+			{
+				vcam1.SetActive (true);
+				vcam2.SetActive (false);
+			}
 		}
 	}
 }
