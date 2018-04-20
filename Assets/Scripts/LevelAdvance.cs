@@ -7,15 +7,16 @@ public class LevelAdvance : MonoBehaviour{
 
 	public GameObject vcam1;
 	public GameObject vcam2;
-	public GameObject levelTransitionPrefab;
-
+	public GameObject levelReturn;
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.CompareTag ("Player") && vcam1.activeSelf) {
+			print ("advancing");
 			vcam1.SetActive (false);
 			vcam2.SetActive (true);
-			Destroy (levelTransitionPrefab);
+			gameObject.SetActive (false);
+			levelReturn.SetActive (true);
 		} 
 	}
 }
