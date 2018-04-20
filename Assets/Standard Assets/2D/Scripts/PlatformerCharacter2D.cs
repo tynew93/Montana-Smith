@@ -22,6 +22,7 @@ namespace UnityStandardAssets._2D
 
         private void Awake()
         {
+			PlayerPrefs.SetInt ("level", 1);
             // Setting up references.
             m_GroundCheck = transform.Find("GroundCheck");
             m_CeilingCheck = transform.Find("CeilingCheck");
