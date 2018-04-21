@@ -246,7 +246,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 240894693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.97946, y: -1.8764769, z: -10}
+  m_LocalPosition: {x: -5.979459, y: -1.8760397, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -473,8 +473,8 @@ MonoBehaviour:
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
-  m_ScreenX: 0.5
-  m_ScreenY: 0.49999982
+  m_ScreenX: 0.4726562
+  m_ScreenY: 0.49999833
   m_CameraDistance: 10
   m_DeadZoneWidth: 0.14296874
   m_DeadZoneHeight: 0.19635431
@@ -19108,6 +19108,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114911278095389122, guid: 4f3aeb3be32676949ae4edf3f112e9dd,
+        type: 2}
+      propertyPath: m_ConfineScreenEdges
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f3aeb3be32676949ae4edf3f112e9dd, type: 2}
   m_IsPrefabParent: 0
@@ -19595,15 +19600,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4950061044348092, guid: 96c854f3a51d3334981c866eb349fe0d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -9.755
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4950061044348092, guid: 96c854f3a51d3334981c866eb349fe0d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.8700013
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4950061044348092, guid: 96c854f3a51d3334981c866eb349fe0d, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4950061044348092, guid: 96c854f3a51d3334981c866eb349fe0d, type: 2}
       propertyPath: m_LocalRotation.x
@@ -19638,6 +19643,21 @@ Prefab:
     - target: {fileID: 1520379594381304, guid: 96c854f3a51d3334981c866eb349fe0d, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114551577074494840, guid: 96c854f3a51d3334981c866eb349fe0d,
+        type: 2}
+      propertyPath: m_LookAt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114116148873842710, guid: 96c854f3a51d3334981c866eb349fe0d,
+        type: 2}
+      propertyPath: m_ConfineScreenEdges
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114116148873842710, guid: 96c854f3a51d3334981c866eb349fe0d,
+        type: 2}
+      propertyPath: m_Damping
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96c854f3a51d3334981c866eb349fe0d, type: 2}
@@ -37811,7 +37831,7 @@ Transform:
   m_PrefabInternal: {fileID: 1556590036}
   m_GameObject: {fileID: 2070644320}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.755, y: -1.8700013, z: -10}
+  m_LocalPosition: {x: -9.4939575, y: -1.870012, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 441646215}
