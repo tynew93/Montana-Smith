@@ -18,6 +18,14 @@ namespace UnityStandardAssets._2D
 			{
 				player.transform.position = new Vector2 (28.71f, -6.861f);
 			}
+
+			if (other.tag == "Player" && PlayerPrefs.GetInt ("level") == 3) {
+				player.transform.position = new Vector2 (65f, -17.8f);
+			}
+
+			if (other.tag == "Player" && PlayerPrefs.GetInt ("level") == 4) {
+				player.transform.position = new Vector2 (91.86f, -16.8f);
+			}
         }
     }
 }
