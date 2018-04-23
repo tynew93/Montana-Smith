@@ -38,13 +38,17 @@ namespace UnityStandardAssets._2D
 
 		private void OnTriggerEnter2D (Collider2D other)
 		{
-			if (other.CompareTag ("Pickup")) {
-				pickupSource.PlayOneShot (pickupSFX);
+			if (other.CompareTag ("Pickup") && other.gameObject.activeInHierarchy) {
+                other.gameObject.SetActive(false);
+                pickupSource.PlayOneShot (pickupSFX);
 				++score;
 				PlayerPrefs.SetInt ("Score", score);
 				print ("Score: " + score);
-				Destroy (other.gameObject);
 			}
+            else if (other.CompareTag("Idol"))
+            {
+                
+            }
 		}
 
 
