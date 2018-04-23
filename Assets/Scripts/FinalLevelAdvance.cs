@@ -15,6 +15,7 @@ public class FinalLevelAdvance : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
+		print (score);
 		if (other.CompareTag ("Player") && vcam1.activeSelf && score >= 9) {
 			vcam1.SetActive (false);
 			vcam2.SetActive (true);
