@@ -39,7 +39,6 @@ namespace UnityStandardAssets._2D
 		private void OnTriggerEnter2D (Collider2D other)
 		{
 			if (other.CompareTag ("Pickup")) {
-				print ("triggered");
 				pickupSource.PlayOneShot (pickupSFX);
 				++score;
 				PlayerPrefs.SetInt ("Score", score);
