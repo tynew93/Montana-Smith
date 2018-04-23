@@ -20,8 +20,14 @@ namespace UnityStandardAssets._2D
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 
+		public AudioSource pickupSource;
+		public AudioClip pickupSFX;
+		private int score = 0;
+
         private void Awake()
         {
+			pickupSource = GetComponent<AudioSource> ();
+
 			PlayerPrefs.SetInt ("level", 1);
             // Setting up references.
             m_GroundCheck = transform.Find("GroundCheck");
@@ -29,6 +35,17 @@ namespace UnityStandardAssets._2D
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
         }
+
+		private void OnTriggerEnter2D (Collider2D other)
+		{
+			if (other.CompareTag ("Pickup")) {
+				print ("triggered");
+				pickupSource.PlayOneShot (pickupSFX);
+				++score;
+				PlayerPrefs.SetInt ("Score", score);
+				Destroy (other.gameObject);
+			}
+		}
 
 
         private void FixedUpdate()

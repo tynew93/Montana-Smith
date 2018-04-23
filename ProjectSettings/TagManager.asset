@@ -8,6 +8,7 @@ TagManager:
   - LevelAdvance
   - LevelReturn
   - Ground
+  - Pickup
   layers:
   - Default
   - TransparentFX
