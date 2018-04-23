@@ -42,6 +42,7 @@ namespace UnityStandardAssets._2D
 				pickupSource.PlayOneShot (pickupSFX);
 				++score;
 				PlayerPrefs.SetInt ("Score", score);
+				print ("Score: " + score);
 				Destroy (other.gameObject);
 			}
 		}
