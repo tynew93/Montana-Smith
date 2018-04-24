@@ -8,7 +8,7 @@ Known bugs: none
 
 Team Contributions:
 Tyler Newton:
--Main Menu
+-UI (Menus, HUD, etc,)
 -Character Creation
 -Pick Up Creation
 -Music Selection
