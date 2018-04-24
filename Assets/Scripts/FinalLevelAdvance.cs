@@ -17,7 +17,7 @@ public class FinalLevelAdvance : MonoBehaviour {
 	{
         score = PlayerPrefs.GetInt("Score");
 		print (score);
-		if (other.CompareTag ("Player") && vcam1.activeSelf && score >= 7) {
+		if (other.CompareTag ("Player") && vcam1.activeSelf && score >= 5) {
 			vcam1.SetActive (false);
 			vcam2.SetActive (true);
 			gameObject.SetActive (false);

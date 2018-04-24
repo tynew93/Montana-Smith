@@ -45,10 +45,6 @@ namespace UnityStandardAssets._2D
 				PlayerPrefs.SetInt ("Score", score);
 				print ("Score: " + score);
 			}
-            else if (other.CompareTag("Idol"))
-            {
-                
-            }
 		}
 
 

@@ -9,6 +9,7 @@ TagManager:
   - LevelReturn
   - Ground
   - Pickup
+  - Idol
   layers:
   - Default
   - TransparentFX

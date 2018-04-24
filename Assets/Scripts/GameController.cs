@@ -7,17 +7,21 @@ using UnityEngine.UI;
 public enum GameMode
 {
     paused,
-    playing
+    playing,
+    won
 }
 
 public class GameController : MonoBehaviour {
 
     [Header("Set in Inspector")]
-    public AudioSource backgroundMusic;
+    public AudioSource BackgroundMusic;
     public GameObject PauseMenu;
+    public GameObject WinMenu;
     public Text scoreText;
+    public AudioSource WinMusic;
+    public Sprite MontanaWinSprite;
 
-    private float prevTimeScale;
+    private float prevTimeScale = 0;
     private GameMode gameMode;
 
     void Awake()
@@ -28,6 +32,8 @@ public class GameController : MonoBehaviour {
     void Start()
     {
         PauseMenu.SetActive(false);
+        WinMenu.SetActive(false);
+        Time.timeScale = 1;
         gameMode = GameMode.playing;
     }
 
@@ -37,17 +43,41 @@ public class GameController : MonoBehaviour {
         {
             PauseGame();
         }
-        else if (Input.GetKeyUp(KeyCode.Escape))
+        else if (Input.GetKeyUp(KeyCode.Escape) && gameMode == GameMode.paused)
         {
             UnpauseGame();
         }
+        if (gameMode == GameMode.won)
+        {
+            GetComponent<SpriteRenderer>().sprite = MontanaWinSprite;
+        }
         scoreText.text = "Keys Collected: " + PlayerPrefs.GetInt("Score").ToString();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Idol"))
+        {
+            other.gameObject.SetActive(false);
+            WinGame();
+        }
+    }
+
+    private void WinGame()
+    {
+        gameMode = GameMode.won;
+        prevTimeScale = Time.timeScale;
+        Time.timeScale = 0;
+        WinMenu.SetActive(true);
+        BackgroundMusic.Stop();
+        WinMusic.Play();
+        
     }
 
     public void PauseGame()
     {
         gameMode = GameMode.paused;
-        backgroundMusic.Pause();
+        BackgroundMusic.Pause();
         PauseMenu.SetActive(true);
         prevTimeScale = Time.timeScale;
         Time.timeScale = 0;
@@ -61,8 +91,13 @@ public class GameController : MonoBehaviour {
     public void UnpauseGame()
     {
         gameMode = GameMode.playing;
-        backgroundMusic.UnPause();
+        BackgroundMusic.UnPause();
         PauseMenu.SetActive(false);
         Time.timeScale = prevTimeScale;
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
